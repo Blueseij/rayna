@@ -83,6 +83,7 @@ img {
 button {
 	text-decoration: none;
 	color: none;
+	color: #000;
 	border: none;
 	padding: 0px;
 }
