@@ -422,7 +422,7 @@ button {
 
 @media (max-width: 670px) {
 
-	#container {
+	.container {
 		margin-bottom: 0px;
 	}
 
