@@ -1,89 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<meta name="description" content="">
-    	<meta name="theme-color" content="#E0DDCF">
+	<head>
+	    	<meta charset="utf-8">
+	    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	    	<meta name="description" content="">
+	    	<meta name="theme-color" content="#F1F0EA">
 
-		<title>RayCo</title>
-		
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+			<title>RayCo</title>
+			
+			<!-- external CSS link -->
+			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/style.css">
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<script type="text/javascript">
-			function toggleMenu() {
-  				var menu = document.getElementById("menu");
-  				menu.classList.toggle("show-menu");
-  				var navBar = document.getElementById("navBar")
-  				navBar.classList.toggle("show-navBar")
-  				var lineLength = document.getElementById("lineLength")
-  				lineLength.classList.toggle("increaseLength")
-			}
-		</script>
-</head>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+			<script type="text/javascript">
+				function toggleMenu() {
+	  				var menu = document.getElementById("menu");
+	  				menu.classList.toggle("show-menu");
+	  				var navBar = document.getElementById("navBar")
+	  				navBar.classList.toggle("show-navBar")
+	  				var lineLength = document.getElementById("lineLength")
+	  				lineLength.classList.toggle("increaseLength")
+				}
+			</script>
+	</head>
 
-<body>
-	<div id="container">
-	<!-- START HERE --> 
-		<div id="navBar" class="navigation">
-			<h1>RayCo</h1>
-			<button onclick="toggleMenu()">
-				<div id="lineLength" class="l"></div>
-			</button>
-			<div id="menu" class="hide-menu">
-				<div class="menu-row">
-					<a href="./index.html" class="home">Home</a>
-					<a href="./about.html" class="about">About Us</a>
+	<body>
+		<div class="container">
+		<!-- START HERE --> 
+			<div id="navBar" class="navigation">
+				<h1>RayCo</h1>
+				<button onclick="toggleMenu()">
+					<div id="lineLength" class="l"></div>
+				</button>
+				<div id="menu" class="hide-menu">
+					<div class="menu-row">
+						<a href="./index.html" class="home">Home</a>
+						<a href="./about.html" class="about">About Us</a>
+					</div>
+					<div class="menu-row">
+						<div class="hll"></div>
+						<div class="hlr"></div>
+					</div>
+					<div class="menu-row">
+						<a href="./services.html" class="services selected">Services</a>
+						<a href="./contact.html" class="contact">Contact Us</a>
+					</div>
 				</div>
-				<div class="menu-row">
-					<div class="hll"></div>
-					<div class="hlr"></div>
+			</div>
+
+			<img src="images/sunrays-mountains.jpg">
+
+			<div class="text-box-home">
+				<div class="text-box-inside">
+					<div class="headlines">
+						<h2>Investigation with integrity</h2>
+						<h2>Providing meaningful insights</h2>
+						<h2>Delivering pragmatic solutions</h2>
+					</div>
+					<div class="text-in-box-home">
+						<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
+						<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
+						<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
+					</div>
 				</div>
-				<div class="menu-row">
-					<a href="./services.html" class="services selected">Services</a>
-					<a href="./contact.html" class="contact">Contact Us</a>
+				
+			</div>
+			
+			<img src="images/library.jpg">
+
+			<div class="text-box-home">
+				<div class="headlines">
+					<h2>Investigation with integrity</h2>
+					<h2>Providing meaningful insights</h2>
+					<h2>Delivering pragmatic solutions</h2>
 				</div>
+				<div class="text-in-box-home">
+					<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
+					<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
+					<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
+				</div>
+			</div>
+
+			<img src="images/city-airplane.jpg">
+
+		<!-- END HERE --> 
+		</div><!-- #container --> 
+
+		<div class="footer">
+			<div class="footer-content">
+				<div class="logo-contact">
+					<h1 class="f-logo">RayCo</h1>
+					<p class="f-l-contact">+44 (0) 795 895 2648</p>
+					<p class="f-l-contact">email@rayco.com</p>
+				</div>
+				<div class="company">
+					<p class="footer-title">Company</p>
+					<a href="./about.html" class="f-about">About Us</a>
+					<a href="./contact.html" class="f-contact">Contact Us</a>
+					<a href="./privacy.html" class="f-privacy">Privacy Policy</a>
+				</div>
+			</div>
+			<div class="website-copyright">
+				<p class="wc-center">© 2023 RayCo | Company no.  |  | Made by @blueseij</p>
 			</div>
 		</div>
 
-		<img src="images/sunrays-mountains.jpg">
-
-		<div class="text-box-home">
-			<div class="headlines">
-				<h2>Investigation with integrity</h2>
-				<h2>Providing meaningful insights</h2>
-				<h2>Delivering pragmatic solutions</h2>
-			</div>
-			<div class="text-in-box-home">
-				<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
-				<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
-				<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
-			</div>
-		</div>
-		
-		<img src="images/library.jpg">
-
-		<div class="text-box-home">
-			<div class="headlines">
-				<h2>Investigation with integrity</h2>
-				<h2>Providing meaningful insights</h2>
-				<h2>Delivering pragmatic solutions</h2>
-			</div>
-			<div class="text-in-box-home">
-				<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
-				<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
-				<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
-			</div>
-		</div>
-
-		<img src="images/city-airplane.jpg">
-
-	<!-- END HERE --> 
-	</div><!-- #container --> 
-</body>
+	</body>
 </html>
