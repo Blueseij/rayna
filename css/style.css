@@ -10,13 +10,8 @@ body {
 	background-size: cover;
 	max-width: 100%;
 	margin-top: 0px;
-}
-
-#container {
-	position: relative;
-	max-width: 1800px;
-	margin: auto;
-	top: 0px;
+	display: flex;
+	flex-direction: column;
 }
 
 #menu {
@@ -27,6 +22,7 @@ body {
 #navBar {
 	position: fixed;
 	top: 0px;
+	z-index: 1;
 }
 
 #lineLength {}
@@ -92,6 +88,22 @@ button {
 /*
 *div classes
 */
+
+.display-none {
+	display: none;
+}
+
+.container {
+	position: relative;
+	max-width: 1800px;
+	margin: auto;
+	top: 0px;
+	flex: 1 0 auto;
+}
+
+.vh-margin-bottom {
+	margin-bottom: 30vh;
+}
 
 .navigation {
 	background-color: #F1F0EA;
@@ -184,7 +196,13 @@ button {
 .text-box-home {
 	background-color: #ffffff;
 	min-height: 400px;
-	max-width: 100%;
+	max-width: 1800px;
+	margin: auto;
+}
+
+.text-box-inside {
+	max-width: 1800px;
+	margin: auto;
 }
 
 .text-in-box-home {
@@ -206,7 +224,6 @@ button {
 	max-width: 76%;
 	float: right;
 	margin-top: 12.5%;
-	margin-bottom: 20%;
 }
 
 .text-in-box-about {
@@ -215,6 +232,101 @@ button {
 	padding-bottom: 5%;
 	padding-right: 0%;
 	display: inline-grid;
+}
+
+.bottom-image {
+	width: 100%;
+	height: 200px;
+	margin-bottom: -10px;
+}
+
+.contact-us-box {
+	background-color: #ffffff;
+	width: 80%;
+	margin: auto;
+	margin-top: 12.5%;
+}
+
+.contact-form {
+	width: 90%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+.footer {
+	background-color: #F1F0EA;
+	width: 100%;
+	height: 300px;
+}
+
+.footer-content {
+	max-width: 1800px;
+	margin: auto;
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-contact {
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.f-logo {
+	font-size: 40px;
+	width: 117px;
+	height: 50px;
+	margin: 0px;
+}
+
+.company {
+	margin-top: 28px;
+	float: right;
+	margin-right: 7%;
+	text-align: right;
+}
+
+.footer-title {
+	font-size: 20px;
+	display: block;
+	margin-right: 0px;
+	text-align: right;
+}
+
+.f-about {
+	font-size: 12px;
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.f-contact {
+	font-size: 12px;
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.f-privacy {
+	font-size: 12px;
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.website-copyright {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.wc-center {
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .background {
@@ -244,13 +356,12 @@ button {
 		min-height: 400px;
 		max-width: 76%;
 		float: right;
-		margin-top: 150px;
-		margin-bottom: 20%;		
+		margin-top: 150px;		
 		padding-bottom: 5%;
 	}
 
 	.text-in-box-about {
-		width: 70%;
+		width: 80%;
 		padding-left: 7%;
 		padding-right: 7%;
 		padding-bottom: 0px;
@@ -311,9 +422,17 @@ button {
 
 @media (max-width: 670px) {
 
+	#container {
+		margin-bottom: 0px;
+	}
+
 	#menu {
 		position: relative;
 		top: 0px;
+	}
+
+	.display-show {
+		display: revert;
 	}
 
 	.hide-menu {
@@ -475,7 +594,7 @@ button {
 		min-height: 400px;
 		max-width: 100%;
 		margin-top: 450px;
-		margin-bottom: 20%;
+		margin-bottom: 0px;
 	}
 
 	.text-in-box-about {
@@ -483,6 +602,73 @@ button {
 		padding-left: 7%;
 		padding-bottom: 0px;
 		padding-right: 7%;
+	}
+
+	.footer {
+		background-color: #F1F0EA;
+		width: 100%;
+		height: 450px;
+	}
+
+	.footer-content {
+		max-width: 1800px;
+		height: 250px;
+		margin: auto;
+		padding-top: 60px;
+		display: block;
+	}
+
+	.logo-contact {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.f-l-contact {
+		text-align: center;
+	}
+
+	.f-logo {
+		font-size: 40px;
+		width: 117px;
+		height: 50px;
+		margin: 0px;
+	}
+
+	.company {
+		position: relative;
+		display: block;
+		width: 100%;
+		margin-top: 28px;
+		margin-right: 0px;
+		text-align: center;
+	}
+
+	.footer-title {
+		display: block;
+		margin-right: 0px;
+		text-align: center;
+	}
+
+	.f-contact {
+		display: block;
+		margin-top: 5px;
+	}
+
+	.f-about {
+		display: block;
+		margin-top: 5px;
+	}
+
+	.f-privacy {
+		display: block;
+		margin-top: 5px;
+	}
+
+	.website-copyright {
+		position: relative;
+		max-width: 1200px;
+		margin: auto;
 	}
 
 	.background {
@@ -512,7 +698,6 @@ button {
 		min-height: 400px;
 		max-width: 100%;
 		margin-top: 250px;
-		margin-bottom: 20%;
 	}
 
 	.text-in-box-about {
