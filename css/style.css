@@ -85,6 +85,18 @@ button {
 	padding: 0px;
 }
 
+.normalize-a {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px;
+	hyphens: auto;
+	hyphenate-limit-chars: 9; 
+	text-align: justify; 
+	word-spacing: -0.5px;
+	margin: 8px 0px 8px 0px;
+}
+
 /*
 *div classes
 */
@@ -242,16 +254,66 @@ button {
 
 .contact-us-box {
 	background-color: #ffffff;
-	width: 80%;
+	max-width: 1000px;
+	min-height: 500px;
 	margin: auto;
 	margin-top: 12.5%;
 }
 
-.contact-form {
-	width: 90%;
-	margin: auto;
+.form-display {
+	display: inline-flex;
+	justify-content: space-between;
 	padding-top: 20px;
 	padding-bottom: 60px;
+	width: 90%;
+	margin: auto;
+}
+
+.div-background {
+	background-color: #F1F0EA;
+	max-width: 100%;
+}
+
+.input-box {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	border-style: solid;
+	border-radius: 0px;
+	border: 0px;
+	background-color: #F1F0EA;
+	outline: none;
+	resize: none;
+}
+
+.input-box[type="text" i] {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 17px;
+	hyphens: auto;
+	hyphenate-limit-chars: 9; 
+	text-align: justify; 
+	word-spacing: -0.5px;
+}
+
+.data-field {
+	height: 30px;
+	width: 250px;
+}
+
+.message-field {
+	width: 90%;
+	height: 400px;
+}
+
+.send-button {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	background-color: #900201;
+	border: none;
+	padding: 10px 13px 10px 13px;
 }
 
 .footer {
@@ -280,6 +342,16 @@ button {
 	width: 117px;
 	height: 50px;
 	margin: 0px;
+}
+
+.f-l-contact {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 20px;
+	hyphens: auto; 
+	word-spacing: -0.5px;
+	display: block;
 }
 
 .company {
