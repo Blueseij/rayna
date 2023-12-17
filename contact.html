@@ -25,58 +25,71 @@
 	  				lineLength.classList.toggle("increaseLength")
 	  				var lineLengthBelow = document.getElementById("lineLengthBelow")
 	  				lineLengthBelow.classList.toggle("show-line")
+	  				var lineLengthBelow2 = document.getElementById("lineLengthBelow2")
+	  				lineLengthBelow2.classList.toggle("show-line")
 				}
 			</script>
+			<script src="https://web3forms.com/client/script.js" async defer></script>
 	</head>
 
 	<body>
 		<div class="container vh-margin-bottom">
 		<!-- START HERE --> 
-			<div id="navBar" class="navigation">
-				<h1>RayCo</h1>
-				<button onclick="toggleMenu()">
-					<div id="lineLength" class="l"></div>
-					<div id="lineLengthBelow" class="l below"></div>
-				</button>
-				<div id="menu" class="hide-menu">
-					<div class="menu-row">
-						<a href="./index.html" class="home">Home</a>
-						<a href="./about.html" class="about">About Us</a>
-					</div>
-					<div class="menu-row">
-						<div class="hll"></div>
-						<div class="hlr"></div>
-					</div>
-					<div class="menu-row">
-						<a href="./services.html" class="services">Services</a>
-						<a href="./contact.html" class="contact selected">Contact Us</a>
+			<div class="full-width">
+				<div id="navBar" class="navigation">
+					<h1>RayCo</h1>
+					<button onclick="toggleMenu()">
+						<div id="lineLength" class="l"></div>
+						<div id="lineLengthBelow" class="l below"></div>
+						<div id="lineLengthBelow2" class="l below2"></div>
+					</button>
+					<div id="menu" class="hide-menu">
+						<div class="menu-row">
+							<a href="./index.html" class="home">Home</a>
+							<a href="./about.html" class="about">About Us</a>
+						</div>
+						<div class="menu-row">
+							<div class="hll"></div>
+							<div class="hlr"></div>
+						</div>
+						<div class="menu-row">
+							<a href="./services.html" class="services">Services</a>
+							<a href="./contact.html" class="contact selected">Contact Us</a>
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="contact-us-box">
-				<div class="headlines">
-					<h2>Contact Us</h2>
-				</div>
-				<form class="form-display" action="send_email.php" method="post">
-					<div>
-						<div class="div-background">
-	  						<label class="normalize-a" for="name">Name</label>
-							<input class="input-box data-field" type="text" id="name" name="name" required>
-	  					</div>
-  						<div class="div-background">
-	  						<label class="normalize-a" for="email">Email</label>
-	  						<input class="input-box data-field" type="email" id="email" name="email" required>
-	  					</div>
-	  					<input class="send-button" type="submit" value="Send Email">
+				<div class="contact-us-box">
+					<div class="headlines">
+						<h2>Contact Us</h2>
 					</div>
-  					<div class="div-background">
-  						<label class="normalize-a" for="message">Message:</label>
-						<textarea class="input-box message-field" id="message" name="message" rows="4" cols="50" required></textarea>
-  					</div>
-				</form>
+					<div class="text-in-box-contact">
+						<p>Send us a message about any questions, inquiries or requests and we will get back to you as soon as possible.</p>
+					</div>
+					<form class="form-display" action="https://api.web3forms.com/submit" method="POST">
+						<div class="name-email">
+							<div>
+								<p>Name</p>
+								<input class="input-box data-field" type="text" name="name" required>
+							</div>
+							<div>
+								<p>E-Mail</p>
+								<input class="input-box data-field" type="email" name="email" required>
+							</div>
+							<button class="send-button" type="submit">Submit Form</button>
+						</div>
+						<div class="message-box">
+							<p>Message</p>
+							<textarea class="input-box message-field" name="message" required></textarea>
+						</div>
+						<input type="hidden" name="access_key" value="e929ca3c-c9e8-4f25-883b-5ab5a286c8aa">
+						<input type="hidden" name="redirect" value="https://blueseij.github.io/rayna/contact.html">
+						<div class="h-captcha" data-captcha="false"></div>
+					</form>
+				</div>
+				<img src="images/buildings.jpg" class="bottom-image display-none display-show">
 			</div>
-			<img src="images/buildings.jpg" class="bottom-image display-none display-show">
+			
+			
 		<!-- END HERE --> 
 		</div><!-- #container --> 
 
@@ -85,7 +98,7 @@
 				<div class="logo-contact">
 					<h1 class="f-logo">RayCo</h1>
 					<a class="f-l-contact normalize-a" href="tel:+447958952648">+44 (0) 795 895 2648</a>
-					<a class="f-l-contact" href="mailto:email@rayco.com?subject=Getting in Contact Through Your Website&body=">email@rayco.com</a>
+					<a class="f-l-contact" href="mailto:rayna@rayna.co.uk?subject=Getting in Contact Through Your Website&body=">rayna@rayna.co.uk</a>
 				</div>
 				<div class="company">
 					<p class="footer-title">Company</p>
@@ -107,3 +120,17 @@
 
 	</body>
 </html>
+
+<!--
+				<form class="form-display" action="https://api.web3forms.com/submit" method="POST">
+					<div class="name-email">
+						<input class="data-field" type="text" name="name" required>
+						<input class="data-field" type="email" name="email" required>
+					<button class="send-button" type="submit">Submit Form</button>
+					</div>
+					<input type="hidden" name="access_key" value="e929ca3c-c9e8-4f25-883b-5ab5a286c8aa">
+					<input type="hidden" name="redirect" value="https://blueseij.github.io/rayna/contact.html">
+					<textarea class="message-field" name="message" required></textarea>
+					<div class="h-captcha" data-captcha="false"></div>
+				</form>
+-->
