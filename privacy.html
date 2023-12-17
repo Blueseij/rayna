@@ -22,14 +22,11 @@
 	  				var navBar = document.getElementById("navBar")
 	  				navBar.classList.toggle("show-navBar")
 	  				var lineLength = document.getElementById("lineLength")
-	  				lineLength.classList.toggle("increaseLength")
-	  				var lineLengthBelow = document.getElementById("lineLengthBelow")
-	  				lineLengthBelow.classList.toggle("show-line")
-	  				var lineLengthBelow2 = document.getElementById("lineLengthBelow2")
-	  				lineLengthBelow2.classList.toggle("show-line")
+	  				lineLength.classList.toggle("show-line")
+	  				var lineLength = document.getElementById("chevron")
+	  				lineLength.classList.toggle("show-chevron")
 				}
 			</script>
-			<script src="https://web3forms.com/client/script.js" async defer></script>
 	</head>
 
 	<body>
@@ -38,9 +35,8 @@
 			<div id="navBar" class="navigation">
 				<h1>RayCo</h1>
 				<button onclick="toggleMenu()">
-					<div id="lineLength" class="l"></div>
-					<div id="lineLengthBelow" class="l below"></div>
-					<div id="lineLengthBelow2" class="l below2"></div>
+					<img id="chevron" src="images/chevron.png">
+					<div id="lineLength" class="l show-line increaseLength"></div>
 				</button>
 				<div id="menu" class="hide-menu">
 					<div class="menu-row">
