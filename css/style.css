@@ -22,7 +22,7 @@ body {
 #navBar {
 	position: fixed;
 	top: 0px;
-	z-index: 1;
+	z-index: 2;
 }
 
 #lineLength {}
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'GFS Didot', serif;
 	font-size: 45px;
 	font-weight: normal;
 	margin-top: 6px;
@@ -121,74 +121,73 @@ button {
 
 .navigation {
 	background-color: #F1F0EA;
-	width: 505px;
-	height: 104px;
-	position: fixed;
-	top: 0px; 
+	width: 252.5px;
+	height: 208px;
+	position: absolute;
+	top: 0px;
 }
 
 .l {
 	background-color: #020402;
-	width: 1px;
-	height: 80px;
-	margin: 12px 0px 12px 0px;
+	width: 200px;
+	height: 1px;
+	margin: 0px 23px 12px 23px;
 	position: absolute;
-	top: 0px;
-	left: 252px;
+	top: 105px;
 }
 
 .home {
 	color: #020402;
 	width: 38px;
 	height: 15px;
-	margin-top: 25px;
+	top: 120px;
+	left: 20px;
 	position: absolute;
-	left: 289px;
 }
 
 .hll {
 	background-color: #020402;
 	height: 0.5px;
 	width: 40px;
-	top: 52px;
+	top: 147px;
+	left: 20px;
 	position: absolute;
-	left: 289px;
 }
 
 .services {
 	color: #020402;
 	width: 50px;
 	height: 15px;
-	margin-top: 65px;
+	top: 160px;
+	left: 20px;
 	position: absolute;
-	left: 289px;
 }
 
 .about {
 	color: #020402;
 	width: 59px;
 	height: 15px;
-	margin-top: 25px;
+	top: 120px;
+	left: 175px;
 	position: absolute;
-	left: 389px;
 }
 
 .hlr {
 	background-color: #020402;
 	height: 0.5px;
 	width: 58px;
-	top: 52px;
+	top: 147px;
+	left: 174px;
 	position: absolute;
-	left: 390px;
 }
 
 .contact {
 	color: #020402;
 	width: 67px;
 	height: 15px;
-	margin-top: 65px;
+	top: 160px;
+	left: 164px;
 	position: absolute;
-	left: 380px;
 }
 
 .selected {
@@ -197,7 +196,7 @@ button {
 
 .selected.contact {
 	width: 69px;
-	left: 378px;
+	left: 163px;
 }
 
 .headlines {
@@ -205,6 +204,18 @@ button {
 	margin-bottom: 3%;
 	padding-left: 4%;
 	padding-right: 4%;
+}
+
+.healine1 {
+
+}
+
+.healine2 {
+	margin-left: 21.5%;
+}
+
+.healine3 {
+	margin-left: 43%;
 }
 
 .text-box-home {
@@ -254,19 +265,128 @@ button {
 	margin-bottom: -10px;
 }
 
-.full-width {
+.headline-box-services {
+	background-color: #ffffff;
+	text-align: center;
 	width: 100%;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title-on-image {
+	max-height: 400px;
+	width: 100%;
+	position: relative;
+
+}
+
+.title-on-image img {
+	opacity: 40%;
+	max-height: 400px;
+	z-index: 0;
+	top: 0px;
+	transition: opacity 0.5s linear;
+}
+
+.title-on-image p {
+	visibility: visible;
+	margin: 0;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #000000;
+	z-index: 1;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	transition: visibility 0.5s linear;
+}
+
+#dueText {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	max-width: 60%;
+	top: 40%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#investText {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	max-width: 60%;
+	top: 40%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#assetsText {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	max-width: 60%;
+	top: 40%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#geoText {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	max-width: 60%;
+	top: 40%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.title-on-image button {
+	padding: 0px;
+	margin: 0px;
+}
+
+.hide-services {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.title-on-image:hover > .hide-services {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.title-on-image:hover > img {
+	opacity: 10%;
+	transition: opacity 0.5s linear;
+}
+
+.title-on-image:hover > p {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.5s linear;
+}
+
+.full-width {
+	min-width: 100%;
+	max-width: 1800px;
+	height: 100%;
 	display: block;
 }
 
 .contact-us-box {
 	background-color: #ffffff;
-	min-width: 100%;
+	min-width: 300px;
+	height: 100%;
 	position: relative;
 	display: flex;
-	float: right;
-	margin-top: 12.5%;
 	flex-wrap: wrap;
+	margin-top: 12.5%;
 }
 
 .form-display {
@@ -330,7 +450,7 @@ button {
 }
 
 .message-box {
-	width: 70%;
+	width: 82%;
 	height: 193.5px;
 	padding-top: 6.5px;
 }
@@ -462,15 +582,15 @@ button {
 	width: 100%;
 }
 
-#chevron {
-	width: 80px;
-	height: 5px;
-	min-height: 30px;
-	max-height: 30px;
-	object-fit: fill;
+#menu-icon {
+	display: none;
 }
 
-.show-chevron {
+.show-menu {
+	display: none;
+}
+
+.show-menu-icon {
 	display: none;
 }
 
@@ -479,6 +599,17 @@ button {
 */
 
 @media (max-width: 1200px) {
+
+	.healine1 {
+	}
+
+	.healine2 {
+		margin-left: 12.5vw;
+	}
+
+	.healine3 {
+		margin-left: 25vw;
+	}
 
 	.text-box-about {
 		background-color: #ffffff;
@@ -501,7 +632,8 @@ button {
 	}
 
 	.background {
-		max-width: 100%;
+		max-width: 100vw;
+		min-width: 100vw;
 		max-height: 100vh;
 		position: fixed;
 		z-index: -1;
@@ -510,6 +642,7 @@ button {
 	.background-image {
 		min-height: 100vh;
 		max-height: 100vh;
+		min-width: 100vw;
 		width: auto;
 		object-fit: cover;
 		margin: 0px;
@@ -523,6 +656,17 @@ button {
 */
 
 @media (max-width: 950px) {
+
+	.healine1 {
+	}
+
+	.healine2 {
+		margin-left: 2vw;
+	}
+
+	.healine3 {
+		margin-left: 4vw;
+	}
 
 	.text-in-box-home {
 		padding-left: 4%;
@@ -539,6 +683,27 @@ button {
 
 	.message-box {
 		width: 100%;
+	}
+
+	#dueText {
+		max-width: 70%;
+		top: 30%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	#investText {
+		max-width: 70%;
+		top: 35%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	#assetsText {
+		max-width: 70%;
+		top: 30%;
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 
 	.background-image {
@@ -568,6 +733,17 @@ button {
 		top: 0px;
 	}
 
+	#menu-icon {
+		display: revert;
+		position: fixed;
+		object-fit: fill;
+		min-height: 0px;
+		height: 30px;
+		width: 40px;
+		right: 30px;
+		top: 29px;
+	}
+
 	.display-show {
 		display: revert;
 	}
@@ -587,7 +763,7 @@ button {
 
 	.navigation {
 		width: 100vw;
-		height: 100px;
+		height: 85px;
 		position: fixed;
 		top: 0px;
 	}
@@ -626,6 +802,7 @@ button {
 		top: revert;
 		left: revert;
 		margin: auto;
+		margin-bottom: 3px;
 		position: relative;
 	}
 
@@ -650,18 +827,34 @@ button {
 	.menu-row {
 		width: 100%;
 		min-height: 1px;
+		max-height: 22px;
 		display: inline-flex;
 		justify-content: space-between;
 	}
 
 	.home {
 		display: inline-flex;
+		top: 0px;
 		left: 0px;
 		width: 32px;
 		height: 15px;
 		position: relative;
 		margin-top: 7px;
 		margin-left: 11%;
+	}
+
+	.healine1 {
+		width: 200px;
+	}
+
+	.healine2 {
+		width: 200px;
+		margin-left: 21vw;
+	}
+
+	.healine3 {
+		width: 200px;
+		margin-left: 42vw;
 	}
 
 	.about {
@@ -705,6 +898,7 @@ button {
 
 	.services {
 		display: inline-flex;
+		top: 0px;
 		left: 0px;
 		width: 53px;
 		height: 15px;
@@ -784,6 +978,34 @@ button {
 
 	.send-button {
 		margin-top: 20px;
+	}
+
+	#dueText {
+		max-width: 80%;
+		top: 16%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#investText {
+		max-width: 70%;
+		top: 20%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+	#assetsText {
+		max-width: 80%;
+		top: 20%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#geoText {
+		max-width: 80%;
+		top: 36%;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 
 	.footer {
@@ -871,7 +1093,7 @@ button {
 }
 
 /*
-* 490px*/
+* w: 400px*/
 
 @media (max-width: 670px) and (max-height: 400px) {
 
