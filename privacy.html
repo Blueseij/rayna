@@ -23,8 +23,6 @@
 	  				navBar.classList.toggle("show-navBar")
 	  				var lineLength = document.getElementById("lineLength")
 	  				lineLength.classList.toggle("show-line")
-	  				var lineLength = document.getElementById("chevron")
-	  				lineLength.classList.toggle("show-chevron")
 				}
 			</script>
 	</head>
@@ -35,10 +33,10 @@
 			<div id="navBar" class="navigation">
 				<h1>RayCo</h1>
 				<button onclick="toggleMenu()">
-					<img id="chevron" src="images/chevron.png">
-					<div id="lineLength" class="l show-line increaseLength"></div>
+					<img id="menu-icon" src="images/menu.png" class="">
 				</button>
 				<div id="menu" class="hide-menu">
+					<div id="lineLength" class="l show-line increaseLength"></div>
 					<div class="menu-row">
 						<a href="./index.html" class="home">Home</a>
 						<a href="./about.html" class="about">About Us</a>

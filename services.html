@@ -23,8 +23,32 @@
 	  				navBar.classList.toggle("show-navBar")
 	  				var lineLength = document.getElementById("lineLength")
 	  				lineLength.classList.toggle("show-line")
-	  				var lineLength = document.getElementById("chevron")
-	  				lineLength.classList.toggle("show-chevron")
+				}
+			</script>
+			<script type="text/javascript">
+				function toggleDueDiligince() {
+	  				var due = document.getElementById("due");
+	  				due.classList.toggle("hide-services");
+				}
+			</script>
+			<script type="text/javascript">
+				function toggleInvestigations() {
+	  				var invest = document.getElementById("invest");
+	  				invest.classList.toggle("hide-services");
+	  				var investText = document.getElementById("investText");
+	  				investText.classList.toggle("hide-services");
+				}
+			</script>
+			<script type="text/javascript">
+				function toggleAssetTracing() {
+	  				var asset = document.getElementById("asset");
+	  				asset.classList.toggle("hide-services");
+				}
+			</script>
+			<script type="text/javascript">
+				function toggleGeoPoliticalAnalysis() {
+	  				var geo = document.getElementById("geo");
+	  				geo.classList.toggle("hide-services");
 				}
 			</script>
 	</head>
@@ -35,9 +59,10 @@
 			<div id="navBar" class="navigation">
 				<h1>RayCo</h1>
 				<button onclick="toggleMenu()">
-					<img id="chevron" src="images/chevron.png">
+					<img id="menu-icon" src="images/menu.png" class="">
+				</button>
+				<div id="menu" class="hide-menu">
 					<div id="lineLength" class="l show-line increaseLength"></div>
-				</button>				<div id="menu" class="hide-menu">
 					<div class="menu-row">
 						<a href="./index.html" class="home">Home</a>
 						<a href="./about.html" class="about">About Us</a>
@@ -55,34 +80,41 @@
 
 			<img src="images/lights.jpg">
 
-			<div class="text-box-home">
-				<div class="text-box-inside">
-					<div class="headlines">
-						<h2>Decision-Making Assistance</h2>
-					</div>
-					<div class="text-in-box-home">
-						<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
-						<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
-						<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
-					</div>
-				</div>
-				
-			</div>
-			
-			<img src="images/library.jpg">
-
-			<div class="text-box-home">
-				<div class="headlines">
-					<h2>Background Investigation</h2>
-				</div>
-				<div class="text-in-box-home">
-					<p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur. Lorem non et amet pellentesque in fermentum a. Lectus sodales accumsan commodo sodales dictum consequat urna lectus in. Integer sapien arcu sed consequat. Nunc lectus nibh aliquet luctus quis bibendum. <br></p>
-					<p>&nbsp;&nbsp;Ornare lorem lorem massa facilisi placerat pellentesque tincidunt maecenas. Rutrum sit consequat felis nullam consequat. Vitae arcu congue sapien sapien aliquam sed. At venenatis nam egestas habitasse sed praesent quis purus aliquet. Vitae enim arcu sed netus. <br></p>
-					<p>&nbsp;&nbsp;Posuere id purus leo adipiscing faucibus imperdiet sit vel sed. Gravida iaculis congue fermentum lacus adipiscing venenatis. Odio vel et faucibus dui sapien in. Nulla ac quam aliquet cras id pellentesque. Sit ut ullamcorper enim sed vitae lacus est tempor. Pellentesque in curabitur etiam vel amet ut lectus sit. Nunc est erat sit tincidunt phasellus viverra.</p>
-				</div>
+			<div >
+				<h2 class="headline-box-services">Our services at a glimpse.</h2>
 			</div>
 
-			<img src="images/city-airplane.jpg">
+			<div class="title-on-image">
+				<img src="images/people.jpg">
+				<p>Due Diligence</p> 
+				<p id="dueText" class="hide-services">
+					While due diligence has become an obvious exercise ahead of investments, acquisitions and partnerships, there have been striking failures in this seemingly straightforward type of research – including FTX and Frank that missed arguably obvious red flags. We recognize that every story has two sides, so we focus on determining acceptable levels of risk that are proportionate to the client’s risk appetite and financial exposure.
+				</p>
+			</div>
+
+			<div class="title-on-image">
+				<img src="images/shard.jpg">
+				<p>Investigations</p> 
+				<p id="investText" class="hide-services">
+					Our investigations are reliable, ethical and transparent. We aim to deliver purpose-driven, strategic and pragmatic intelligence. We understand the importance of probing the context and interpreting the meaning behind our finding that will guide the client’s course of action, as well as consider various outcomes, scenarios and suggesting next steps.
+				</p>
+			</div>
+
+			<div class="title-on-image">
+				<img src="images/city-airplane.jpg">
+				<p>Asset Tracing</p>
+				<p id="assetsText" class="hide-services">
+					When it comes to asset tracing, our primary objectives is speed to prevent asset dissipation and concealment, as well as thoroughness of research by exploring not only publicly available information but also open but hard-to-access data, and being creative in identifying details through indirect sources, including other jurisdictions and touchpoints such as counterparties and regulatory entries.
+				</p>
+			</div>
+
+			<div class="title-on-image">
+				<img src="images/globe.jpg">
+				<p>Geo-political Analysis</p>
+				<p id="geoText" class="hide-services">
+					Our geo-political analysis is focused on providing relevant, insightful and in-depth analysis that goes deeper than open sources and obvious conclusions to enable well-considered decisions.
+				</p>
+			</div>
 
 		<!-- END HERE --> 
 		</div><!-- #container --> 
