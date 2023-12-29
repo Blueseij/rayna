@@ -108,7 +108,7 @@ button {
 .container {
 	position: relative;
 	display: block;
-	max-width: 1800px;
+	max-width: 1400px;
 	margin: auto;
 	top: 0px;
 	overflow: hidden;
@@ -231,9 +231,10 @@ button {
 }
 
 .text-in-box-home {
-	padding-left: 4%;
+	padding-left: 6%;
 	padding-bottom: 4%;
-	padding-right: 20%;
+	padding-right: 6%;
+	text-align: justify;
 }
 
 .headlines-about {
@@ -248,7 +249,7 @@ button {
 	min-height: 400px;
 	max-width: 76%;
 	float: right;
-	margin-top: 12.5%;
+	margin-top: 250px;
 }
 
 .text-in-box-about {
@@ -282,7 +283,7 @@ button {
 }
 
 .title-on-image img {
-	opacity: 40%;
+	opacity: 30%;
 	max-height: 400px;
 	z-index: 0;
 	top: 0px;
@@ -294,7 +295,6 @@ button {
 	margin: 0;
 	font-size: 30px;
 	line-height: 40px;
-	font-weight: bold;
 	color: #000000;
 	z-index: 1;
 	top: 45%;
@@ -312,6 +312,7 @@ button {
 	top: 40%;
 	padding-left: 20%;
 	padding-right: 20%;
+	text-align: justify;
 }
 
 #investText {
@@ -322,6 +323,7 @@ button {
 	top: 40%;
 	padding-left: 20%;
 	padding-right: 20%;
+	text-align: justify;
 }
 
 #assetsText {
@@ -332,6 +334,7 @@ button {
 	top: 40%;
 	padding-left: 20%;
 	padding-right: 20%;
+	text-align: justify;
 }
 
 #geoText {
@@ -342,6 +345,7 @@ button {
 	top: 40%;
 	padding-left: 20%;
 	padding-right: 20%;
+	text-align: justify;
 }
 
 .title-on-image button {
@@ -350,15 +354,17 @@ button {
 }
 
 .hide-services {
+	display: none;
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .title-on-image:hover > .hide-services {
+	display: inline;
 	visibility: visible;
 	opacity: 1;
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: display 0s, visibility 0s, opacity 0.5s linear;
 }
 
 .title-on-image:hover > img {
@@ -386,7 +392,7 @@ button {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 12.5%;
+	margin-top: 250px;
 }
 
 .form-display {
@@ -450,7 +456,7 @@ button {
 }
 
 .message-box {
-	width: 82%;
+	width: 76%;
 	height: 193.5px;
 	padding-top: 6.5px;
 }
@@ -575,7 +581,7 @@ button {
 .privacy-box {
 	width: 90%;
 	margin: 5%;
-	margin-top: 150px;
+	margin-top: 190px;
 }
 
 .privacy-headlines {
@@ -781,7 +787,7 @@ button {
 	}
 
 	h2 {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	a {
@@ -849,12 +855,12 @@ button {
 
 	.healine2 {
 		width: 200px;
-		margin-left: 21vw;
+		margin-left: 25vw;
 	}
 
 	.healine3 {
 		width: 200px;
-		margin-left: 42vw;
+		margin-left: 50vw;
 	}
 
 	.about {
