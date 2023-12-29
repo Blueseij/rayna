@@ -855,12 +855,12 @@ button {
 
 	.healine2 {
 		width: 200px;
-		margin-left: 25vw;
+		margin-left: 23vw;
 	}
 
 	.healine3 {
-		width: 200px;
-		margin-left: 50vw;
+		width: 150px;
+		margin-left: 46vw;
 	}
 
 	.about {
@@ -935,6 +935,7 @@ button {
 	}
 
 	.text-in-box-home {
+		max-width: 90%;
 		padding-left: 4%;
 		padding-bottom: 4%;
 		padding-right: 7%;
